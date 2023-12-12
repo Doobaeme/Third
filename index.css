@@ -10,7 +10,6 @@ body {
     font-weight: bold;
   }
   
-  /* 그리드 설계 */
   .grid-1 {
     display: grid;
     width: 90vw;
@@ -38,7 +37,6 @@ body {
   @media only screen and (min-width: 500px) {
   
     .grid-1 {
-      /* 너비를 기준으로 높이를 계산 */
       grid-template-columns: repeat(6, 1fr);
       grid-template-areas:
         "t     t     t     d2      d7      d8"
@@ -51,7 +49,6 @@ body {
   
   }
   
-  /* flex 속성 */
   .flex-row {
     display: flex;
   }
@@ -78,7 +75,6 @@ body {
     height: auto;
   }
   
-  /* 그리드 별 배경 이미지 */
   .day-1 {
     grid-area: d1;
     background: url("image/frame/frame1.png");
@@ -439,7 +435,6 @@ body {
     border-radius: 10px;
   }
   
-  /* door styles */
   .grid-1 input {
     display: none;
   }
@@ -455,7 +450,6 @@ body {
     height: 120px;
   }
   
-  /* flex 속성 */
   .flex-row {
     display: flex;
   }
@@ -482,7 +476,6 @@ body {
     height: auto;
   }
   
-  /* 그리드 별 배경 이미지 */
   .day-1 {
     grid-area: d1;
     background: url("image/frame/frame1.png");
@@ -843,7 +836,6 @@ body {
     border-radius: 10px;
   }
   
-  /* door styles */
   .grid-1 input {
     display: none;
   }
@@ -859,7 +851,6 @@ body {
     height: 120px;
   }
   
-  /* 카드 앞면 */
   .door {
     width: 100%;
     transform-style: preserve-3d;
@@ -874,7 +865,6 @@ body {
     color: white;
   }
   
-  /* 카드 뒷면 */
   .door div {
     position: absolute;
     height: 100%;
@@ -887,7 +877,6 @@ body {
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
   }
   
-  /* 카드 뒤집기 애니메이션 */
   .door .back {
     background-size: cover;
     background-position: center center;
@@ -899,7 +888,6 @@ body {
     transform: rotateY(180deg);
   }
   
-  /* 확대 및 회전 애니메이션 */
   @keyframes zoomAndRotate {
     from {
       transform: scale(0) rotateY(0deg);
@@ -910,7 +898,6 @@ body {
     }
   }
   
-  /* 애니메이션 적용 */
   .zoomIn {
     animation: zoomAndRotate 0.5s ease forwards;
   }
@@ -949,7 +936,6 @@ body {
     justify-content: center;
   }
   
-  /* 이미지와 텍스트가 있는 카드를 위한 스타일 */
   .modal-content div {
     background-size: cover;
     background-position: center;

@@ -1,4 +1,3 @@
-// 배경음 실행 관련
 document.addEventListener('DOMContentLoaded', function() {
     const soundElement = document.querySelector('.sound');
     const stopElement = document.querySelector('.stop');
